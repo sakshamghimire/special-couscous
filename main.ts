@@ -9,9 +9,9 @@ const main = async () => {
         let lastFetch = new Date()
         lastFetch.setDate(lastFetch.getDate() - 10)
 
-        connection = await getConn({email:'', password:''})
+        connection = await getConn({email:'sakshamghimire@lftechnology.com', password:'xplp evkk fgeb ihxg'})
     
-        const emails = await getEmail(connection, buildFilterCriteria(lastFetch, []))
+        const emails = await getEmail(connection, buildFilterCriteria(lastFetch, ['alinadangol@lftechnology.com']))
         console.log(emails)
         await saveEmail(emails)
 
